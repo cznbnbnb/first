@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.OrderFormController">
+   <children>
+      <HBox layoutX="13.0" layoutY="404.0" prefHeight="82.0" prefWidth="674.0">
+         <children>
+            <ToggleButton fx:id="homepage" mnemonicParsing="false" onAction="#homepage" prefHeight="77.0" prefWidth="185.0" text="去这儿找" textFill="RED">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant color="#f8ff00" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="orderForm" mnemonicParsing="false" onAction="#orderForm" prefHeight="76.0" prefWidth="163.0" text="去这儿订单" textFill="#0061ff">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#00fff2" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="recharge" mnemonicParsing="false" onAction="#recharge" prefHeight="76.0" prefWidth="164.0" text="去这儿充值" textFill="#2e00ff">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#04ffb4" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="userSet" mnemonicParsing="false" onAction="#userSet" prefHeight="76.0" prefWidth="165.0" text="去这儿设置" textFill="#ff00f3">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#67ff00" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="9.0" layoutY="117.0" prefHeight="274.0" prefWidth="683.0">
+         <content>
+            <AnchorPane prefHeight="591.0" prefWidth="595.0">
+               <children>
+                  <HBox layoutY="8.0" prefHeight="69.0" prefWidth="660.0">
+                     <children>
+                        <TextArea fx:id="t1" prefHeight="69.0" prefWidth="659.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="2.0" layoutY="77.0" prefHeight="69.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t2" prefHeight="69.0" prefWidth="656.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutY="140.0" prefHeight="69.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t3" prefHeight="69.0" prefWidth="660.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="2.0" layoutY="215.0" prefHeight="69.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t4" prefHeight="69.0" prefWidth="659.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="2.0" layoutY="284.0" prefHeight="69.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t5" prefHeight="69.0" prefWidth="659.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="2.0" layoutY="353.0" prefHeight="82.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t6" prefHeight="69.0" prefWidth="656.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutY="436.0" prefHeight="69.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t7" prefHeight="69.0" prefWidth="658.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutY="509.0" prefHeight="82.0" prefWidth="674.0">
+                     <children>
+                        <TextArea fx:id="t8" prefHeight="82.0" prefWidth="660.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="77.0" prefWidth="427.0" text="这儿有您最近所有的订单：">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="next" layoutX="501.0" layoutY="35.0" mnemonicParsing="false" onAction="#next" text="此后" />
+      <Button fx:id="back" layoutX="441.0" layoutY="35.0" mnemonicParsing="false" onAction="#back" text="此前" />
+   </children>
+</AnchorPane>

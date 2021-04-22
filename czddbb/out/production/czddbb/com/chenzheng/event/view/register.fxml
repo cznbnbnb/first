@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.RegisterController">
+   <children>
+      <Accordion layoutX="192.0" layoutY="203.0" />
+      <TextField fx:id="newUser" layoutX="217.0" layoutY="106.0" onAction="#getnu" />
+      <TextField fx:id="newPassword" layoutX="217.0" layoutY="172.0" onAction="#getnp" />
+      <Label layoutX="217.0" layoutY="82.0" text="请输入新用户名：" />
+      <TextField fx:id="confirmPassword" layoutX="217.0" layoutY="239.0" onAction="#getcp" />
+      <Label layoutX="217.0" layoutY="148.0" text="请输入新密码：" />
+      <Label layoutX="217.0" layoutY="215.0" text="请确认密码：" />
+      <Label layoutX="217.0" layoutY="285.0" text="绑定手机号（非必需）：" />
+      <TextField fx:id="bindNumber" layoutX="217.0" layoutY="309.0" onAction="#getbn" />
+      <Button fx:id="confirmRegister" layoutX="230.0" layoutY="368.0" mnemonicParsing="false" onAction="#conR" text="确认注册" />
+      <Button fx:id="cancel" layoutX="361.0" layoutY="368.0" mnemonicParsing="false" onAction="#cancel" text="取消" />
+      <Label layoutX="199.0" layoutY="25.0" prefHeight="57.0" prefWidth="288.0" text="去这儿用户注册" textFill="#9000ffd1">
+         <font>
+            <Font name="Microsoft Tai Le" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

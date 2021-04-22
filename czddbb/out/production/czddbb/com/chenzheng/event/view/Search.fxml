@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.SearchController">
+   <children>
+      <Label layoutX="14.0" layoutY="25.0" text="为您查找到" />
+      <Label fx:id="number" layoutX="117.0" layoutY="25.0" text="？？" />
+      <Label layoutX="160.0" layoutY="25.0" text="条结果" />
+      <HBox fx:id="t1" layoutX="18.0" layoutY="111.0" prefHeight="58.0" prefWidth="615.0">
+         <children>
+            <TextArea fx:id="text1" prefHeight="40.0" prefWidth="614.0" />
+         </children></HBox>
+      <Button fx:id="next" layoutX="256.0" layoutY="19.0" mnemonicParsing="false" onAction="#next" text="下一页" />
+      <Button fx:id="back" layoutX="334.0" layoutY="19.0" mnemonicParsing="false" onAction="#back" text="上一页" />
+      <Button fx:id="sorting" layoutX="473.0" layoutY="19.0" mnemonicParsing="false" onAction="#sorting" prefHeight="36.0" prefWidth="139.0" text="按评论数排序" />
+      <HBox fx:id="t3" layoutX="18.0" layoutY="235.0" prefHeight="67.0" prefWidth="615.0">
+         <children>
+            <TextArea fx:id="text3" prefHeight="67.0" prefWidth="619.0" />
+         </children></HBox>
+      <HBox fx:id="t4" layoutX="17.0" layoutY="302.0" prefHeight="67.0" prefWidth="615.0">
+         <children>
+            <TextArea fx:id="text4" prefHeight="67.0" prefWidth="615.0" />
+         </children></HBox>
+      <HBox fx:id="t5" layoutX="18.0" layoutY="369.0" prefHeight="67.0" prefWidth="615.0">
+         <children>
+            <TextArea fx:id="text5" prefHeight="67.0" prefWidth="625.0" />
+         </children></HBox>
+      <HBox fx:id="t2" layoutX="18.0" layoutY="168.0" prefHeight="67.0" prefWidth="615.0">
+         <children>
+            <TextArea fx:id="text2" prefHeight="0.0" prefWidth="615.0" />
+         </children></HBox>
+      <TextField fx:id="idText" layoutX="255.0" layoutY="65.0" onAction="#idText" prefHeight="36.0" prefWidth="78.0" />
+      <Label layoutX="14.0" layoutY="71.0" text="输入景点id查看具体信息：" />
+      <Button fx:id="check" layoutX="332.0" layoutY="65.0" mnemonicParsing="false" onAction="#check" prefHeight="36.0" prefWidth="78.0" text="查看" />
+      <Button fx:id="searchAgain" layoutX="498.0" layoutY="65.0" mnemonicParsing="false" onAction="#searchAgain" prefHeight="36.0" prefWidth="114.0" text="没找到再查" />
+   </children>
+</AnchorPane>

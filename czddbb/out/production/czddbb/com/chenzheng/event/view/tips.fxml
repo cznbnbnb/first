@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="221.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.TipsController">
+   <children>
+      <Label layoutX="33.0" layoutY="20.0" text="趣币是本平台的统一交易货币" />
+      <Label layoutX="33.0" layoutY="44.0" prefHeight="24.0" prefWidth="234.0" text="充值规则是1趣币=1rmb" />
+      <Label layoutX="33.0" layoutY="68.0" prefHeight="24.0" prefWidth="234.0" text="充值密码为登陆密码，交易方" />
+      <Label layoutX="33.0" layoutY="92.0" prefHeight="24.0" prefWidth="234.0" text="式为手机话费支付，绑定手机" />
+      <Label layoutX="33.0" layoutY="116.0" prefHeight="24.0" prefWidth="234.0" text="号即为同意本充值条例！！！" />
+      <Label layoutX="99.0" layoutY="140.0" prefHeight="24.0" prefWidth="102.0" text="王霸条例" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirm" layoutX="29.0" layoutY="171.0" mnemonicParsing="false" onAction="#confirm" prefHeight="36.0" prefWidth="234.0" text="我知道了，我同意" />
+   </children>
+</AnchorPane>

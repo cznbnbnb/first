@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.Stage4Controller">
+   <children>
+      <Button fx:id="confirm" layoutX="159.0" layoutY="202.0" mnemonicParsing="false" onAction="#confirm" text="确认" />
+      <Label fx:id="label1" layoutX="149.0" layoutY="68.0" prefHeight="24.0" prefWidth="103.0" />
+   </children>
+</AnchorPane>

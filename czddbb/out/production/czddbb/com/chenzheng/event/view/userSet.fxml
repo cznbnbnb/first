@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.UserSetController">
+   <children>
+      <HBox layoutX="13.0" layoutY="404.0" prefHeight="82.0" prefWidth="674.0">
+         <children>
+            <ToggleButton fx:id="homepage" mnemonicParsing="false" onAction="#homepage" prefHeight="77.0" prefWidth="185.0" text="去这儿找" textFill="RED">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant color="#f8ff00" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="orderForm" mnemonicParsing="false" onAction="#orderForm" prefHeight="76.0" prefWidth="163.0" text="去这儿订单" textFill="#0061ff">
+               <font>
+                  <Font name="Bauhaus 93" size="22.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#00fff2" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="recharge" mnemonicParsing="false" onAction="#recharge" prefHeight="76.0" prefWidth="164.0" text="去这儿充值" textFill="#2e00ff">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#04ffb4" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="userSet" mnemonicParsing="false" onAction="#userSet" prefHeight="76.0" prefWidth="165.0" text="去这儿设置" textFill="#ff00f3">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#67ff00" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ToggleButton>
+         </children>
+      </HBox>
+      <TextField fx:id="text2" layoutX="229.0" layoutY="143.0" onAction="#gettext2" />
+      <TextField fx:id="text1" layoutX="229.0" layoutY="70.0" onAction="#gettext1" />
+      <TextField fx:id="text3" layoutX="229.0" layoutY="214.0" onAction="#gettext3" />
+      <TextField fx:id="text4" layoutX="229.0" layoutY="285.0" onAction="#gettext4" />
+      <Button fx:id="tc1" layoutX="495.0" layoutY="70.0" mnemonicParsing="false" onAction="#tc1" text="确认" />
+      <Button fx:id="tc3" layoutX="495.0" layoutY="214.0" mnemonicParsing="false" onAction="#tc3" text="确认" />
+      <Button fx:id="tc4" layoutX="495.0" layoutY="285.0" mnemonicParsing="false" onAction="#tc4" text="确认" />
+      <Label layoutX="229.0" layoutY="46.0" text="请输入新用户名：" />
+      <Label layoutX="229.0" layoutY="119.0" text="请输入旧密码：" />
+      <Label layoutX="229.0" layoutY="190.0" text="请输入新密码：" />
+      <Label layoutX="229.0" layoutY="261.0" text="绑定您的手机号：" />
+      <Label layoutX="19.0" layoutY="22.0" prefHeight="54.0" prefWidth="144.0" text="用户设置">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

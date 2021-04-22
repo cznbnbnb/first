@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chenzheng.event.controller.LoginController">
+   <children>
+      <Button fx:id="register" layoutX="167.0" layoutY="283.0" mnemonicParsing="false" onAction="#register" text="注册" />
+      <Button layoutX="341.0" layoutY="283.0" mnemonicParsing="false" text="游客登录" />
+      <PasswordField fx:id="passwor" layoutX="170.0" layoutY="232.0" onAction="#getp" />
+      <TextField fx:id="usernam" layoutX="170.0" layoutY="152.0" onAction="#getu" />
+      <Label layoutX="170.0" layoutY="122.0" text="账号：" />
+      <Label layoutX="170.0" layoutY="199.0" text="密码：" />
+      <Label layoutX="85.0" layoutY="63.0" prefHeight="36.0" prefWidth="125.0" text="欢迎来到" textFill="#0011ff">
+         <font>
+            <Font name="Sitka Heading Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="25.0" prefHeight="77.0" prefWidth="267.0" text="去这儿旅行" textFill="#ff00d3">
+         <font>
+            <Font name="Yu Gothic Light" size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="63.0" prefHeight="36.0" prefWidth="96.0" text="登录界面" textFill="#4d00ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" layoutX="254.0" layoutY="283.0" mnemonicParsing="false" onAction="#login" text="登录" />
+   </children>
+</AnchorPane>
